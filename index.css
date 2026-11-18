@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+    --background-color: #EAE8E2;
+    --text-color: #0E0E0E;
+    --accent-color: #E76B2F;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'DM Sans', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.080em;
+    line-height: 0.75;
+    text-transform: uppercase;
+}
+
+h1 {
+    transform: scaleX(1.15);
+}
+
+.accent {
+    color: var(--accent-color);
+}
+
+.heading-dot {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+}

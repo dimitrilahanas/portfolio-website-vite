@@ -1,0 +1,33 @@
+.heroInfo {
+    padding-top: min(5em, 4%);
+    padding-left: min(10em, 15%);
+    display: flex;
+}
+
+.heroInfo aside {
+    padding-top: min(20em, 12%);
+    padding-right: min(10em, 20%);
+    margin-left: auto;
+    font-size: clamp(0.3rem, 1.5vw, 1.1rem);
+}
+
+.heroInfo h1 {
+    font-size: clamp(1rem, 15vw, 12rem);
+}
+
+@media (max-width: 768px) {
+    .heroInfo {
+        flex-direction: column;
+    }
+
+    .heroInfo aside {
+        margin-right: auto;
+        padding-top: min(15em, 5%);
+        font-size: clamp(0.3rem, 1.8vw, 1.1rem);
+        text-align: center;
+    }
+
+    .heroInfo aside br{
+        display: none;
+    }
+}

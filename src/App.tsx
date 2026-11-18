@@ -1,12 +1,12 @@
-import Hello from "./components/hello"
+import Hero from "./sections/Hero.tsx";
 
 function App() {
 
   return (
     <>
-    <Hello />
+    <Hero />
     </>
   )
 }
 
-export default App
+export default App;
