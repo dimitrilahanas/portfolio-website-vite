@@ -1,7 +1,7 @@
 import styles from './Hero.module.css';
 
 function Hero() {
-    return <section className={styles.hero}>
+    return <section id="hero" className={styles.hero}>
         <main className={styles.heroInfo}>
             <section className="headings">
                 <h1>idea<span className="heading-dot">.</span></h1>

@@ -16,6 +16,16 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     font-family: 'DM Sans', sans-serif;
+    cursor: default;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+a:hover {
+    color: var(--accent-color);
 }
 
 h1, h2, h3 {
