@@ -1,0 +1,28 @@
+.About {
+    padding-top: min(15em, 10%);
+}
+
+.subHeading {
+    padding-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.subHeading::after {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background: var(--accent-color);
+    border-radius: 999px;
+}
+
+.aboutInfo {
+    display: flex;
+    padding: 2.5rem 4rem 0;
+}
+
+.rightContent {
+    padding-left: 5rem;
+    padding-top: 1rem;
+}

@@ -3,7 +3,7 @@ import styles from './Navbar.module.css';
 function Navbar() {
     return <section className={styles.Navbar}>
         <section className={styles.stickyNav}>
-            <img className={styles.longLogo} src="src/assets/logo-longform.png"/>
+            <a href="#"><img className={styles.longLogo} src="src/assets/logo-longform.png"/></a>
 
             <nav>
                 <ul className={styles.navLinks}>

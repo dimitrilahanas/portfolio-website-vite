@@ -1,3 +1,10 @@
+.Navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(234, 232, 226, 0.85);
+}
+
 .stickyNav {
     display: flex;
     align-items: center;

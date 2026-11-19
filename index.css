@@ -37,7 +37,11 @@ h1, h2, h3 {
 }
 
 h1 {
-    transform: scaleX(1.15);
+    font-size: clamp(1rem, 15vw, 12rem);
+}
+
+h2 {
+    font-size: clamp(1rem, 8vw, 10rem);
 }
 
 .accent {
@@ -47,4 +51,10 @@ h1 {
 .heading-dot {
     font-family: 'DM Sans', sans-serif;
     font-weight: 700;
+}
+
+section[id] {
+    min-height: 100svh;
+    align-content: center;
+    padding-bottom: 10rem;
 }
