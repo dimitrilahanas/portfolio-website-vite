@@ -7,6 +7,8 @@
     --accent-color: #E76B2F;
 }
 
+html { scroll-behavior: smooth; }
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
