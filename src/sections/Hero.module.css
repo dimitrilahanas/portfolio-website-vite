@@ -10,7 +10,7 @@
     margin-left: auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .heroInfo {
         flex-direction: column;
     }

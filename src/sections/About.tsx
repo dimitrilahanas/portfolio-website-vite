@@ -5,7 +5,7 @@ function About() {
         <main className={styles.aboutInfo}>
             <aside className={styles.leftContent}>
                 <p className={`${styles.subHeading} accent`}>ABOUT ME</p>
-                <img src="src/assets/me-square.png"/>
+                <div className={styles.aboutMePhoto}><img src="src/assets/me-square.png"/></div>
             </aside>
 
             <section className={styles.rightContent}>

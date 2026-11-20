@@ -19,10 +19,35 @@
 
 .aboutInfo {
     display: flex;
-    padding: 2.5rem 4rem 0;
+    padding: 1rem 4rem 0;
+}
+
+.aboutMePhoto img {
+    width: clamp(50px, 30vw, 500px);
+    height: auto;
 }
 
 .rightContent {
     padding-left: 5rem;
     padding-top: 1rem;
+}
+
+@media (max-width: 1000px) {
+    .About {
+        padding-top: min(15em, 15%);
+    }
+
+    .rightContent {
+        padding: 0;
+    }
+
+    .aboutMePhoto img {
+        padding-bottom: 1rem;
+    }
+
+    .aboutInfo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
