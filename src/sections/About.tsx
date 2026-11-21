@@ -1,11 +1,12 @@
 import styles from './About.module.css';
+import meSquare from "src/assets/me-square.png";
 
 function About() {
     return <section id="about" className={styles.About}>
         <main className={styles.aboutInfo}>
             <aside className={styles.leftContent}>
                 <p className={`${styles.subHeading} accent`}>ABOUT ME</p>
-                <div className={styles.aboutMePhoto}><img src="src/assets/me-square.png"/></div>
+                <div className={styles.aboutMePhoto}><img src={meSquare}/></div>
             </aside>
 
             <section className={styles.rightContent}>
