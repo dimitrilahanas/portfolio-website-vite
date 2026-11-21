@@ -1,0 +1,19 @@
+.projectCardContent h4 {
+    color: white;
+}
+
+.ProjectCard {
+    position: relative;
+}
+
+.ProjectCard img {
+    border-radius: 22px;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.projectCardContent {
+    position: absolute;
+    bottom: 1.3rem;
+    left: 2rem;
+}

@@ -5,6 +5,7 @@
     --background-color: #EAE8E2;
     --text-color: #0E0E0E;
     --accent-color: #E76B2F;
+    --gutter: clamp(1rem, 5vw, 4rem);
 }
 
 html { scroll-behavior: smooth; }
@@ -67,4 +68,5 @@ section[id] {
     min-height: 100svh;
     align-content: center;
     padding-bottom: 10rem;
+    padding-inline: var(--gutter);
 }

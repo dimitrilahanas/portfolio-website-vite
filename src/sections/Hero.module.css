@@ -1,21 +1,21 @@
 .heroInfo {
-    padding-top: min(5em, 4%);
-    padding-left: min(10em, 15%);
     display: flex;
+    padding-top: clamp(1rem, 4vw, 5rem);
 }
 
 .heroInfo aside {
-    padding-top: min(20em, 12%);
-    padding-right: min(10em, 20%);
-    margin-left: auto;
+    padding-top: clamp(2rem, 12vw, 20rem);
+}
+
+.headings {
+    padding-left: clamp(0rem, 8vw, 10rem);
 }
 
 .locationTxt {
-    padding-bottom: 1.5rem;
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding: 2rem 4rem;
+    padding-block: 2rem;
 }
 
 .locationTxt::after {
@@ -32,12 +32,12 @@
     }
 
     .heroInfo aside {
-        margin-right: auto;
-        padding-top: min(15em, 5%);
+        margin-inline: auto;
+        padding-top: 2rem;
         text-align: center;
     }
 
-    .heroInfo aside br{
+    .heroInfo aside br {
         display: none;
     }
 }

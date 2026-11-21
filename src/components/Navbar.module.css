@@ -8,7 +8,7 @@
 .stickyNav {
     display: flex;
     align-items: center;
-    padding: 2.5rem 4rem 0;
+    padding: 2.5rem var(--gutter) 0;
     font-size: clamp(0.3rem, 1.5vw, 1rem);
     font-weight: 500;
 }
@@ -29,7 +29,7 @@
 
 @media (max-width: 768px) {
     .stickyNav {
-        padding: 1rem 1rem 0.5rem;
+        padding: 1rem var(--gutter) 0.5rem;
         font-size: clamp(0.8rem, 1.8vw, 1.8rem);
     }
 }
