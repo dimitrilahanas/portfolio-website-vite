@@ -1,75 +1,108 @@
-# React + TypeScript + Vite
+# Dimitrios Studio.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+My personal portfolio site, designed and built from scratch with React and TypeScript.
 
-Currently, two official plugins are available:
+**idea. plan. design. build.**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## About
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Dimitrios Studio is where my work lives: mobile apps, web projects and photography. The site is a single-page portfolio with bold, editorial typography and a minimal palette, built without a UI library or template.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **React** + **TypeScript**
+- **Vite**: dev server and build
+- **CSS Modules**: component-scoped styling
+- **Google Fonts**: Archivo Black and DM Sans
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Features
+
+- **Data-driven projects:** project cards are generated from a single data file, so adding a project needs no new markup.
+- **Sticky navigation** with anchor links to each section.
+- **Fluid, responsive typography** using `clamp()`, scaling smoothly from phone to desktop without fixed breakpoints.
+- **Responsive layouts** that stack on mobile.
+
+---
+
+## Project Structure
 
 ```
+src/
+├── components/
+│   ├── Navbar.tsx
+│   └── ProjectCard.tsx
+├── sections/
+│   ├── Hero.tsx
+│   ├── About.tsx
+│   └── Projects.tsx
+├── data/
+│   └── projects.ts        # all project content
+├── types/
+│   └── project.ts         # Project interface
+└── index.css              # global styles, variables, fonts
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+public/
+└── projects/
+    └── <slug>/            # one folder per project
+        ├── cover.png
+        ├── 1.png
+        ├── 2.png
+        └── 3.png
 ```
+
+Each component sits next to its own `.module.css` file.
+
+---
+
+## Adding a Project
+
+1. Add an entry to `src/data/projects.ts`:
+   ```ts
+   {
+       slug: 'sol',
+       title: 'Sol',
+       description: 'Mars weather, one sol at a time.',
+       techStack: ['Flutter', 'Dart', 'FastAPI', 'Python'],
+       githubRepo: 'https://github.com/dimitrilahanas/sol-app',
+   }
+   ```
+2. Create `public/projects/<slug>/` with `cover.png` and `1.png`–`3.png`.
+
+That's it. The card and its images are picked up automatically from the slug.
+
+---
+
+## Getting Started
+
+```bash
+git clone https://github.com/dimitrilahanas/<repo-name>.git
+cd <repo-name>
+npm install
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+---
+
+## Roadmap
+
+- [ ] Individual project pages with React Router
+- [ ] Photography gallery with lightbox
+- [ ] Working contact form
+- [ ] Scroll and text reveal animations
+- [ ] Smooth scrolling with Lenis
+
+---
+
+Designed and built by **Dimitrios Lahanas**.
