@@ -1,5 +1,5 @@
 import styles from './About.module.css';
-import meSquare from "../src/assets/me-square.png";
+import meSquare from "../assets/me-square.png";
 
 function About() {
     return <section id="about" className={styles.About}>
