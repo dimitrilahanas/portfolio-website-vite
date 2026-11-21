@@ -11,6 +11,7 @@ function Hero() {
             </section>
             <aside><p>A creative studio focused<br/> on building digital products,<br/> from concept to code.</p></aside>
         </main>
+        <p className={styles.locationTxt}>SYDNEY, AUSTRALIA</p>
     </section>
 }
 
