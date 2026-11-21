@@ -1,5 +1,5 @@
 import styles from './Navbar.module.css';
-import longLogo from 'src/assets/logo-longform.png';
+import longLogo from '../src/assets/logo-longform.png';
 
 function Navbar() {
     return <section className={styles.Navbar}>
