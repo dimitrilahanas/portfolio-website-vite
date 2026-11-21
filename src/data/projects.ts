@@ -9,6 +9,24 @@ const projects: Project[] = [
         backendRepo: 'https://github.com/dimitrilahanas/sol-api',
         slug: 'sol'
     },
+
+    {
+        title: 'Coming Soon',
+        description: 'Coming Soon',
+        techStack: ['Soon'],
+        githubRepo: '',
+        backendRepo: '',
+        slug: 'soon1'
+    },
+
+    {
+        title: 'Coming Soon',
+        description: 'Coming Soon',
+        techStack: ['Soon'],
+        githubRepo: '',
+        backendRepo: '',
+        slug: 'soon2'
+    },
     
 ]
 

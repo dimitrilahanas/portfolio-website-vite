@@ -1,3 +1,16 @@
+.Projects {
+    padding-top: clamp(4rem, 10vw, 10rem);
+}
+
+.Projects h4 {
+    padding-bottom: 2rem;
+}
+
+.projectsDisplay {
+    padding-top: 2rem;
+    display: flex;
+}
+
 .subHeading {
     padding-bottom: 1.5rem;
     display: flex;

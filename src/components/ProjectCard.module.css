@@ -1,19 +1,44 @@
 .projectCardContent h4 {
-    color: white;
+    color: var(--text-color);
 }
 
-.ProjectCard {
-    position: relative;
+.projectCardContent {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .ProjectCard img {
     border-radius: 22px;
-    width: 100%;
-    aspect-ratio: 16 / 9;
+    width: 25%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
 }
 
-.projectCardContent {
-    position: absolute;
-    bottom: 1.3rem;
-    left: 2rem;
+.ProjectCard {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.ProjectCard a {
+    color: var(--accent-color);
+}
+
+.tech {
+    border: 0.9px solid;
+    padding: 6px 14px;
+    border-radius: 999px;
+    
+}
+
+.featured img {
+    width: 55%;
+    aspect-ratio: 23 / 9;
+    object-fit: cover;
+}
+
+.techStack {
+    display: flex;
+    gap: 8px;
 }
