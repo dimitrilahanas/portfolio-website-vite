@@ -1,18 +1,26 @@
-.heroInfo {
+.Hero {
+    min-height: 100svh;
     display: flex;
+    flex-direction: column;
+}
+
+.heroInfo {
+    flex: 1;
+    display: flex;
+    gap: clamp(1rem, 7vw, 10rem);
     padding-top: clamp(1rem, 4vw, 5rem);
     justify-content: center;
+    align-items: center;
 }
 
 .heroInfo aside {
-    padding-top: clamp(2rem, 12vw, 20rem);
+    padding-bottom: 12rem;
 }
 
 .locationTxt {
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding-block: 2rem;
 }
 
 .locationTxt::after {
@@ -26,11 +34,12 @@
 @media (max-width: 1000px) {
     .heroInfo {
         flex-direction: column;
+        align-items: center;
     }
 
     .heroInfo aside {
         margin-inline: auto;
-        padding-top: 2rem;
+        padding-bottom: 0;
         text-align: center;
     }
 
