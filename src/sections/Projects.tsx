@@ -6,9 +6,9 @@ const [featuredProject, ...others] = projects;
 
 function Projects() {
     return <section id="projects" className={styles.Projects}>
+        <p className={`${styles.subHeading} accent`}>SELECTED WORK</p>
         <main className={styles.projectsInfo}>
-            <p className={`${styles.subHeading} accent`}>SELECTED WORK</p>
-            <h4>Projects</h4>
+            <h2>Projects<span className="heading-dot accent">.</span></h2>
 
             <section className={styles.featuredProjects}>
                 <ProjectCard project={featuredProject} featured />

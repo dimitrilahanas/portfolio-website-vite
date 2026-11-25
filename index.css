@@ -38,7 +38,7 @@ a:hover {
     color: var(--accent-color);
 }
 
-h1, h2, h3 {
+h1, h2 {
     font-family: "Archivo Black", sans-serif;
     font-weight: 400;
     letter-spacing: -0.080em;
@@ -47,19 +47,15 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: clamp(5rem, min(15vw, 17svh), 15rem);
+    font-size: clamp(5rem, min(18vw, 20svh), 17rem);
 }
 
 h2 {
     font-size: clamp(3.5rem, 7vw, 9rem);
 }
 
-h4 {
-    font-size: clamp(2rem, 6vw, 8rem);
-}
-
-h5 {
-    font-size: clamp(2rem, 4vw, 8rem);
+h3 {
+    font-size: clamp(2rem, 3vw, 3.5rem);
 }
 
 p {

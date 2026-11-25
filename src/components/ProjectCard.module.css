@@ -10,7 +10,7 @@
 
 .ProjectCard img {
     border-radius: 22px;
-    width: 25%;
+    width: 45%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
 }
@@ -41,4 +41,47 @@
 .techStack {
     display: flex;
     gap: 8px;
+}
+
+@media (max-width: 1000px) {
+    .ProjectCard {
+        display: grid;
+        grid-template-areas:
+            "img"
+            "tags";
+        gap: 12px;
+    }
+
+    .ProjectCard img {
+        grid-area: img;
+        width: 100%;
+    }
+
+    .projectCardContent {
+        display: contents;
+    }
+
+    .projectDetails {
+        grid-area: img;
+        align-self: end;
+        padding: 1.5rem;
+        color: white;
+        border-radius: 0 0 22px 22px;
+        background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+    }
+
+    .techStack {
+        grid-area: tags;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .ProjectCard:not(.featured) h3 {
+        font-size: 1.25rem;
+    }
+
+    .ProjectCard:not(.featured) p,
+    .ProjectCard:not(.featured) a {
+        font-size: 0.8rem;
+    }
 }
