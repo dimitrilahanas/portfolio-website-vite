@@ -1,9 +1,12 @@
 .About {
-    padding-top: clamp(4rem, 10vw, 10rem);
+    min-height: calc(100svh - var(--nav-h));
+    display: flex;
+    flex-direction: column;
 }
 
 .subHeading {
-    padding-bottom: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -18,8 +21,12 @@
 }
 
 .aboutInfo {
+    flex: 1;
     display: flex;
-    padding-top: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12rem;
+    margin-right: 12rem;
 }
 
 .aboutMePhoto img {
@@ -33,12 +40,13 @@
 }
 
 @media (max-width: 1000px) {
-    .About {
-        padding-top: min(15em, 15%);
-    }
-
     .rightContent {
         padding: 0;
+    }
+
+    .aboutInfo {
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .aboutMePhoto img {

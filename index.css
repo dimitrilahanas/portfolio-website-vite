@@ -11,7 +11,7 @@
 
 @media (max-width: 768px) {
     :root {
-        --nav-h: 64px;
+        --nav-height: 64px;
     }
 }
 
@@ -47,11 +47,11 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: clamp(5rem, 13vw, 15rem);
+    font-size: clamp(5rem, min(15vw, 17svh), 15rem);
 }
 
 h2 {
-    font-size: clamp(2rem, 8vw, 10rem);
+    font-size: clamp(3.5rem, 7vw, 9rem);
 }
 
 h4 {
@@ -80,4 +80,5 @@ section[id] {
     align-content: center;
     padding-bottom: 10rem;
     padding-inline: var(--gutter);
+    scroll-margin-top: var(--nav-height);
 }

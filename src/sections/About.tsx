@@ -3,9 +3,9 @@ import meSquare from "../assets/me-square.png";
 
 function About() {
     return <section id="about" className={styles.About}>
+        <p className={`${styles.subHeading} accent`}>ABOUT ME</p>
         <main className={styles.aboutInfo}>
             <aside className={styles.leftContent}>
-                <p className={`${styles.subHeading} accent`}>ABOUT ME</p>
                 <div className={styles.aboutMePhoto}><img src={meSquare}/></div>
             </aside>
 
