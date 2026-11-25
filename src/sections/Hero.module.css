@@ -1,5 +1,5 @@
 .Hero {
-    min-height: 100svh;
+    min-height: calc(100svh - var(--nav-h));
     display: flex;
     flex-direction: column;
 }

@@ -6,6 +6,7 @@
 }
 
 .stickyNav {
+    height: var(--nav-height);
     display: flex;
     align-items: center;
     padding: 2.5rem var(--gutter) 0;

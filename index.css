@@ -6,6 +6,13 @@
     --text-color: #0E0E0E;
     --accent-color: #E76B2F;
     --gutter: clamp(1rem, 5vw, 4rem);
+    --nav-height: 80px;
+}
+
+@media (max-width: 768px) {
+    :root {
+        --nav-h: 64px;
+    }
 }
 
 html { scroll-behavior: smooth; }
