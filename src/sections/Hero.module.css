@@ -1,14 +1,11 @@
 .heroInfo {
     display: flex;
     padding-top: clamp(1rem, 4vw, 5rem);
+    justify-content: center;
 }
 
 .heroInfo aside {
     padding-top: clamp(2rem, 12vw, 20rem);
-}
-
-.headings {
-    padding-left: clamp(0rem, 8vw, 10rem);
 }
 
 .locationTxt {
