@@ -9,19 +9,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 12rem;
-    margin-right: 12rem;
-}
-
-.rightContent {
-    padding-left: 5rem;
-    padding-top: 1rem;
+    gap: clamp(2rem, 5vw, 5rem);
+    margin-inline: clamp(0rem, 8vw, 12rem);
 }
 
 .rightContent img {
-    width: clamp(50px, 30vw, 400px);
+    width: clamp(200px, 30vw, 400px);
     border-radius: 22px;
     height: auto;
+    display: block;
 }
 
 .subHeading {
@@ -47,51 +43,32 @@
 }
 
 .emailContact {
-    padding-top: 2rem;
+    padding-top: clamp(1rem, 3vw, 2rem);
 }
 
 .emailContact span {
-    font-size: clamp(2rem, 3vw, 3.5rem);
-    gap: 10rem;
+    font-size: clamp(1.25rem, 4.5vw, 3.5rem);
     font-weight: 600;
 }
 
 .contactList {
-    padding-top: 2rem;
+    padding-top: clamp(1rem, 3vw, 2rem);
     display: flex;
-    gap: 4rem;
+    flex-wrap: wrap;
+    gap: clamp(1rem, 4vw, 4rem);
 }
 
 .contactList span a {
-    font-size: clamp(1.5rem, 2vw, 2.3rem);
+    font-size: clamp(1rem, 2vw, 2.3rem);
 }
 
 @media (max-width: 1000px) {
     .contactInfo {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .contactInfo {
         flex-direction: column;
-        align-items: center;
         text-align: center;
     }
 
     .contactList {
         justify-content: center;
-    }
-
-    .rightContent {
-        padding: 0;
-    }
-
-    .rightContent img {
-        padding-top: 3rem;
-        border-radius: 22px;
-    }
-
-    .contactList span {
-        gap: 2rem;
     }
 }
