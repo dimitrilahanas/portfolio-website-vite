@@ -40,6 +40,12 @@
     border-radius: 999px;
 }
 
+.link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25em;
+}
+
 .emailContact {
     padding-top: 2rem;
 }
@@ -83,5 +89,9 @@
     .rightContent img {
         padding-top: 3rem;
         border-radius: 22px;
+    }
+
+    .contactList span {
+        gap: 2rem;
     }
 }
