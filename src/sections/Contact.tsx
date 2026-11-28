@@ -8,7 +8,7 @@ function Contact() {
             <section className={styles.leftContent}>
                 <h2>Let's build something<span className="heading-dot accent">.</span></h2>
                 <div className={styles.emailContact}>
-                    <span><a href="">hello@dimitrios.studio ↗</a></span>
+                    <span><a href="mailto:hello@dimitrios.studio">hello@dimitrios.studio ↗</a></span>
                  </div>
             
                 <div className={styles.contactList}>
