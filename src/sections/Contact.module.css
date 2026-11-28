@@ -1,0 +1,87 @@
+.Contact {
+    min-height: calc(100svh - var(--nav-h));
+    display: flex;
+    flex-direction: column;
+}
+
+.contactInfo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12rem;
+    margin-right: 12rem;
+}
+
+.rightContent {
+    padding-left: 5rem;
+    padding-top: 1rem;
+}
+
+.rightContent img {
+    width: clamp(50px, 30vw, 400px);
+    border-radius: 22px;
+    height: auto;
+}
+
+.subHeading {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.subHeading::after {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background: var(--accent-color);
+    border-radius: 999px;
+}
+
+.emailContact {
+    padding-top: 2rem;
+}
+
+.emailContact span {
+    font-size: clamp(2rem, 3vw, 3.5rem);
+    gap: 10rem;
+    font-weight: 600;
+}
+
+.contactList {
+    padding-top: 2rem;
+    display: flex;
+    gap: 4rem;
+}
+
+.contactList span a {
+    font-size: clamp(1.5rem, 2vw, 2.3rem);
+}
+
+@media (max-width: 1000px) {
+    .contactInfo {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .contactInfo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contactList {
+        justify-content: center;
+    }
+
+    .rightContent {
+        padding: 0;
+    }
+
+    .rightContent img {
+        padding-top: 3rem;
+        border-radius: 22px;
+    }
+}
